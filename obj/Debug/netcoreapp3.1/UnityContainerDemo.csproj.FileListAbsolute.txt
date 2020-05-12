@@ -1,0 +1,14 @@
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\UnityContainerDemo.exe
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\obj\Debug\netcoreapp3.1\UnityContainerDemo.csprojAssemblyReference.cache
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\obj\Debug\netcoreapp3.1\UnityContainerDemo.AssemblyInfoInputs.cache
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\obj\Debug\netcoreapp3.1\UnityContainerDemo.AssemblyInfo.cs
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\UnityContainerDemo.deps.json
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\UnityContainerDemo.runtimeconfig.json
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\UnityContainerDemo.runtimeconfig.dev.json
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\UnityContainerDemo.dll
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\UnityContainerDemo.pdb
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\Unity.Abstractions.dll
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\bin\Debug\netcoreapp3.1\Unity.Container.dll
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\obj\Debug\netcoreapp3.1\UnityContainerDemo.csproj.CopyComplete
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\obj\Debug\netcoreapp3.1\UnityContainerDemo.dll
+C:\Users\jeffr\Desktop\repos\UnityContainerDemo\obj\Debug\netcoreapp3.1\UnityContainerDemo.pdb

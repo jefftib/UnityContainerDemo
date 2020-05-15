@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Unity;
 using UnityContainerDemo.Interfaces;
 
 namespace UnityContainerDemo
@@ -8,14 +9,20 @@ namespace UnityContainerDemo
     class Driver
     {
 
-    private ICar _car=null;
-        public Driver(ICar car) 
+        private ICar _Car =null;
+        private ICarKey _Key = null;
+        private string _Name = string.Empty;
+        public Driver(ICar car, ICarKey key, string name) 
         {
-            _car = car;
+            _Car = car;
+            _Key = key;
+            _Name = name;
+
         }
+        
         public void RunCar() 
         {
-            Console.WriteLine("Running {0} - {1} mile ", _car.GetType().Name, _car.Run()); 
+            Console.WriteLine("Running {0} with {1} - {2} mile driven by {3} ", _Car.GetType().Name, _Key.GetType().Name, _Car.Run(), _Name);
         }
     }
 }

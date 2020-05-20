@@ -4,6 +4,7 @@ using Unity;
 using UnityContainerDemo.Interfaces;
 using Unity.Injection;
 using UnityContainerDemo.ManufacturerKeys;
+using Unity.Lifetime;
 
 namespace UnityContainerDemo
 {
@@ -11,19 +12,24 @@ namespace UnityContainerDemo
     {
         static void Main(string[] args)
         {
-            BasisVoorbeeld();
+           /* BasisVoorbeeld();
             WithContainer();
             newDriverIsNewBMW();
             alwaysAudi();
             registerWithName();
             registerInstance();
+            meerdereParameters();
+            injectedParameters();
+            ExplicitTransManager();
+            ContainerControlledLTM();
+            HierchicalLTM();*/
             RunCarWithKeyAndDriver();
 
         }
 
 
 
-        public static void BasisVoorbeeld() 
+     /*   public static void BasisVoorbeeld() 
         {
             Driver driver = new Driver(new BMW()); 
             driver.RunCar();
@@ -90,6 +96,54 @@ namespace UnityContainerDemo
             var driver = container.Resolve<Driver>();
             driver.RunCar();
         }
+
+        public static void meerdereParameters() 
+        {
+            var container = new UnityContainer();
+            container.RegisterType<ICar, Audi>(); 
+            container.RegisterType<ICarKey, AudiKey>(); 
+            var driver = container.Resolve<Driver>();
+            driver.RunCar();
+        }
+
+        public static void injectedParameters() 
+        {
+            var container = new UnityContainer(); 
+            container.RegisterType<Driver>(new InjectionConstructor(new object[] { new Audi(), "Steve" }));
+            var driver = container.Resolve<Driver>(); // Injects Audi and Stevedriver.RunCar();
+        }
+
+        public static void ExplicitTransManager() 
+        {
+            var container = new UnityContainer().RegisterType<ICar, BMW>(new TransientLifetimeManager());
+            var driver1 = container.Resolve<Driver>();
+            driver1.RunCar();
+            var driver2 = container.Resolve<Driver>();
+            driver2.RunCar();
+        }
+
+        public static void ContainerControlledLTM() 
+        {
+            var container = new UnityContainer().RegisterType<ICar, BMW>(new ContainerControlledLifetimeManager()); 
+            var driver1 = container.Resolve<Driver>();
+            driver1.RunCar();
+            var driver2 = container.Resolve<Driver>();
+            driver2.RunCar();
+        }
+
+        public static void HierchicalLTM() 
+        {
+            var container = new UnityContainer().RegisterType<ICar, BMW>(new HierarchicalLifetimeManager());
+            var childContainer = container.CreateChildContainer(); 
+            var driver1 = container.Resolve<Driver>(); 
+            driver1.RunCar();
+            var driver2 = container.Resolve<Driver>(); 
+            driver2.RunCar(); 
+            var driver3 = childContainer.Resolve<Driver>();
+            driver3.RunCar();
+            var driver4 = childContainer.Resolve<Driver>();
+            driver4.RunCar();
+        }*/
 
        public static void RunCarWithKeyAndDriver() 
         {
